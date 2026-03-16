@@ -1,0 +1,25 @@
+{
+  "name": "playwright-framework-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "lint": "npx eslint . --ext .js,.ts",
+    "backstop:reference": "npx backstop reference --config=backstop/backstop.config.js",
+    "backstop:test": "npx backstop test --config=backstop/backstop.config.js",
+    "visual:run-all": "npm run test && npm run backstop:test",
+    "prepare": "npx playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.35.0",
+    "backstop-js": "^4.5.0",
+    "backstop-playwright": "^1.1.0",
+    "bottleneck": "^2.19.5",
+    "eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.5"
+  }
+}
