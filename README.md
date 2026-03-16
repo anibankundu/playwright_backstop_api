@@ -59,6 +59,7 @@ If you'd like, I can:
 - Convert to TypeScript
 - Add an Allure or custom reporter and show CI (GitHub Actions) config
 - Add more example page objects and end-to-end flows
+trying to use playwright, use backstop for ux  and generic api check
 # Playwright + BackstopJS + API Framework
 
 A beginner-friendly yet production-ready test framework that combines:

@@ -4,6 +4,7 @@ module.exports = async (page, scenario, vp) => {
   // example: go to login, ensure consistent state, capture screenshot
   await page.goto('https://example.com/login', { waitUntil: 'networkidle' });
   // If login modal or cookie prompt appears, close it here
+  await page.waitForLoadState('domcontentloaded');
   await page.waitForTimeout(500);
   // optionally interact with page before capture
 };

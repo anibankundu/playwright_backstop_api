@@ -18,8 +18,8 @@ test.describe('Example flow', () => {
     // Intentionally invalid login to show error capture
     await login.login('baduser', 'badpass');
 
-    // wait a bit for error to appear
-    await page.waitForTimeout(500);
+    // wait for error element to appear
+    await page.waitForSelector(login.selectors.errorMessage, { timeout: 5000 }).catch(() => {});
     const err = await login.getError();
     // capture screenshot for reporting / debugging
     const shot = await captureScreenshot(page, 'login-invalid');
