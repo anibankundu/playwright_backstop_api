@@ -1,0 +1,35 @@
+node_modules/
+playwright-report/
+test-results/
+artifacts/
+backstop_data/
+# --- Dependencies ---
+node_modules/
+
+# --- Playwright outputs ---
+reports/
+test-results/
+playwright-report/
+
+# --- BackstopJS outputs ---
+backstop_data/bitmaps_test/
+backstop_data/html_report/
+backstop_data/ci_report/
+
+# --- Environment variables ---
+.env
+.env.local
+.env.*.local
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+
+# --- IDE files ---
+.vscode/
+.idea/
