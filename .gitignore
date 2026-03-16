@@ -1,3 +1,8 @@
+node_modules/
+playwright-report/
+test-results/
+artifacts/
+backstop_data/
 # --- Dependencies ---
 node_modules/
 

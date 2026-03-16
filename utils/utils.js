@@ -33,7 +33,8 @@ async function safeClick(page, selector, options = {}) {
 async function safeType(page, selector, text, options = {}) {
   const timeout = options.timeout ?? 5000;
   await page.waitForSelector(selector, { timeout });
-  await page.fill(selector, text);
+  await page.fill(selector, ''); // clear
+  await page.type(selector, text, options);
 }
 
 /**

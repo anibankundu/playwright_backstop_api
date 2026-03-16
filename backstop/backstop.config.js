@@ -4,6 +4,8 @@
 module.exports = {
   id: 'project-backstop',
   viewports: [{ label: 'desktop', width: 1280, height: 720 }],
+  onBeforeScript: 'playwright/onBefore.js', // optional
+  onReadyScript: 'playwright/onReady.js',   // optional
   scenarios: [
     {
       label: 'Login page visual',
