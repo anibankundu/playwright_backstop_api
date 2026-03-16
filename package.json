@@ -1,0 +1,38 @@
+{
+  "name": "playwright-backstop-api",
+  "version": "1.0.0",
+  "description": "Playwright E2E framework with BackstopJS visual regression and API rate limiting",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:api": "playwright test tests/api",
+    "test:report": "playwright show-report reports/playwright-html",
+    "backstop:reference": "backstop reference --config=backstop.config.js",
+    "backstop:test": "backstop test --config=backstop.config.js",
+    "backstop:approve": "backstop approve --config=backstop.config.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "bottleneck": "2.19.5",
+    "dotenv": "17.3.1",
+    "winston": "3.19.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "backstopjs": "6.3.25",
+    "eslint": "9.39.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "playwright",
+    "backstopjs",
+    "visual-regression",
+    "api-testing",
+    "rate-limiting"
+  ],
+  "author": "",
+  "license": "MIT"
+}
