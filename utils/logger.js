@@ -27,7 +27,7 @@ const logger = createLogger({
     // Add colour to console output.
     format.colorize(),
     // Human-readable format: "2024-01-01 12:00:00 [INFO]: message"
-    format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
+    format.printf(({ timestamp, level, message }) => `${timestamp} [${level}]: ${message}`)
   ),
 
   transports: [
